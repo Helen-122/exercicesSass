@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* declaration de ma variable $titleColor
+a laquelle j'applique la couleurs rouge
+*/
+/*
+J'affecte ma variable à la couleur de mon h1
+*/
+h1 {
+  color: red; }
+
+/* declaration de ma variable $secondColor
+a laquelle j'applique la couleurs turquoise
+*/
+/*
+J'affecte ma variable à la couleur de mon h3
+*/
+h3 {
+  color: #008B8B; }
+
+/*
+Ce mixin regroupe plusieurs proprietes de texte
+*/
+/*
+J'applique les propriétés du mixin "texte-paragraph" à toutes les classes
+appelées "corps"
+*/
+.corps {
+  color: #4B0082;
+  font-size: 14px;
+  font-family: arial; }
+
+h4 {
+  color: #C71585;
+  font-size: 22px;
+  font-family: impact; }
+
+.soustitre-basic, .soustitre2-report {
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #1E90FF; }
+
+.soustitre2-report {
+  text-decoration: underline; }
+
+.first-list li {
+  color: #0000FF;
+  text-decoration: underline; }
+
+.corps1:hover {
+  background-color: yellow;
+  text-decoration: underline;
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */

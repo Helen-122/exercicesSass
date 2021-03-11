@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Declaration de ma variable $mainTitleColor
+a laquelle j'applique la couleur turquoise
+*/
+/*
+J'affecte ma variable à la couleur des h1
+*/
+h1 {
+  color: #20B2AA; }
+
+/* declaration de ma variable $titleColor
+a laquelle j'applique la couleur verte
+*/
+/*
+J'affecte ma variable à la couleur des h3 et h4, donc les titres des parties
+*/
+h3, h4 {
+  color: green; }
+
+/*J'applique mon hover sur ma liste, avec les proprietés du mixin "effets"*/
+a li {
+  font-family: monospace;
+  font-size: 16px;
+  color: #FF00FF;
+  /*une fois cliqué, le lien devient rose*/ }
+  a li:hover {
+    color: lightblue; }
+  a li:visited {
+    color: pink; }
+
+/*# sourceMappingURL=style.css.map */

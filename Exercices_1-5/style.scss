@@ -1,0 +1,69 @@
+/* declaration de ma variable $titleColor
+a laquelle j'applique la couleurs rouge
+*/
+$titleColor: red;
+/*
+J'affecte ma variable à la couleur de mon h1
+*/
+h1 {
+  color: $titleColor;
+}
+/* declaration de ma variable $secondColor
+a laquelle j'applique la couleurs turquoise
+*/
+$secondColor: #008B8B;
+/*
+J'affecte ma variable à la couleur de mon h3
+*/
+h3
+{
+  color: $secondColor;
+}
+/*
+Ce mixin regroupe plusieurs proprietes de texte
+*/
+@mixin text-paragraph {
+  color: #4B0082;
+  font-size: 14px;
+  font-family: arial;
+}
+/*
+J'applique les propriétés du mixin "texte-paragraph" à toutes les classes
+appelées "corps"
+*/
+.corps {
+  @include text-paragraph;
+}
+@mixin special-title {
+  color: #C71585;
+  font-size: 22px;
+  font-family: impact;
+}
+h4 {
+  @include special-title;
+}
+.soustitre-basic{
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #1E90FF;
+}
+.soustitre2-report{
+  @extend .soustitre-basic;
+  text-decoration: underline;
+}
+@mixin list-style {
+  color: #0000FF;
+  text-decoration: underline;
+}
+.first-list li {
+  @include list-style;
+}
+//J'applique un hover sur le premier paragraphe//
+  @mixin special-paragraph {
+    background-color: yellow;
+    text-decoration: underline;
+    color: green;
+      }
+  .corps1:hover{
+    @include special-paragraph;
+  }
